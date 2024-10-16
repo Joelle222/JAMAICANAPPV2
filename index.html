@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌺 Créateur de Parfum Jamaïcain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="app-title">🌺 Créateur de Parfum Jamaïcain</h1>
+        <p>Découvrez les arômes exotiques de la Jamaïque</p>
+    </header>
+
+    <main>
+        <section id="perfume-creator">
+            <h2>🧪 Créez Votre Parfum</h2>
+            <label for="top-note">Note de Tête :</label>
+            <select id="top-note">
+                <option value="mango">🥭 Mangue</option>
+                <option value="passionfruit">🍈 Fruit de la passion</option>
+                <option value="guava">🍍 Goyave</option>
+                <option value="papaya">🍑 Papaye</option>
+                <option value="soursop">🍏 Corossol</option>
+                <option value="lime">🍋 Citron vert</option>
+                <option value="pineapple">🍎 Ananas</option>
+                <option value="ginger">🌿 Gingembre</option>
+                <option value="bergamot">🍊 Bergamote</option>
+                <option value="grapefruit">🍇 Pamplemousse jamaïcain</option>
+            </select>
+
+            <label for="heart-note">Note de Cœur :</label>
+            <select id="heart-note">
+                <option value="ylang">🌼 Ylang-ylang</option>
+                <option value="plumeria">🌺 Plumeria</option>
+                <option value="cinnamon">🌿 Cannelle</option>
+                <option value="bayleaf">🍃 Feuille de laurier</option>
+                <option value="gingerlily">🌸 Gingembre Lily</option>
+                <option value="jasmine">💐 Jasmin</option>
+                <option value="hibiscus">🌷 Hibiscus</option>
+                <option value="frangipani">🌹 Frangipanier</option>
+                <option value="orchid">🌻 Orchidée</option>
+                <option value="rose">🌼 Rose</option>
+            </select>
+
+            <label for="base-note">Note de Fond :</label>
+            <select id="base-note">
+                <option value="rum">🥃 Rhum jamaïcain</option>
+                <option value="patchouli">🍂 Patchouli</option>
+                <option value="cedarwood">🌲 Cèdre</option>
+                <option value="oakmoss">🌿 Mousse de chêne</option>
+                <option value="myrrh">🪔 Myrrhe</option>
+                <option value="sandalwood">🪵 Bois de santal</option>
+                <option value="amber">💎 Ambre</option>
+                <option value="tonka">🌰 Fève Tonka</option>
+                <option value="vetiver">🌾 Vétiver jamaïcain</option>
+                <option value="vanilla">🍦 Vanille</option>
+            </select>
+
+            <label for="perfume-name">Nom de votre parfum :</label>
+            <input type="text" id="perfume-name" placeholder="Entrez un nom pour votre création">
+
+            <button id="create-perfume-btn">Créer le Parfum</button>
+            <div id="perfume-result"></div>
+            <canvas id="perfume-image" width="200" height="300"></canvas>
+        </section>
+
+        <section id="quiz-section">
+            <h2>🧠 Quiz des Parfums Jamaïcains</h2>
+            <p id="quiz-question"></p>
+            <input type="text" id="quiz-answer" placeholder="Votre réponse">
+            <button id="submit-answer-btn">Soumettre</button>
+            <div id="quiz-result"></div>
+            <div id="quiz-progress"></div>
+        </section>
+
+        <section id="perfume-history">
+            <h2>📜 Histoire des Parfums Jamaïcains</h2>
+            <p>Les parfums jamaïcains sont profondément ancrés dans la culture de l'île et reflètent sa riche biodiversité. Traditionnellement, ils utilisent des ingrédients locaux comme le piment de la Jamaïque, la noix de muscade, le gingembre et les agrumes.
+                L'huile de vétiver, produite localement, est un ingrédient clé dans de nombreux parfums jamaïcains.</p>
+            <p>Le rhum jamaïcain, connu pour son arôme unique, est parfois utilisé comme base alcoolique dans certains parfums artisanaux. Les parfums jamaïcains s'inspirent souvent de la culture rastafari, incorporant des notes d'encens et d'herbes.</p>
+            <p>L'industrie du parfum en Jamaïque connaît actuellement un renouveau, avec des marques locales qui mettent en valeur les ingrédients et les traditions de l'île, tout en innovant pour créer des fragrances modernes et captivantes.</p>
+        </section>
+
+        <section id="diy-recipes">
+            <h2>🧪 Recettes DIY</h2>
+            <p>Créez votre propre eau de Cologne jamaïcaine :</p>
+            <ol>
+                <li>Mélangez 90ml d'alcool biologique à 90°</li>
+                <li>Ajoutez 10 gouttes d'huile essentielle de citron vert</li>
+                <li>Ajoutez 5 gouttes d'huile essentielle de gingembre</li>
+                <li>Ajoutez 3 gouttes d'huile essentielle d'ambrette (musc naturel)</li>
+                <li>Complétez avec 10ml d'eau distillée</li>
+                <li>Laissez macérer pendant une semaine avant utilisation</li>
+            </ol>
+        </section>
+
+        <section id="ingredients">
+            <h2>🌿 Ingrédients Populaires</h2>
+            <div id="ingredients-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
